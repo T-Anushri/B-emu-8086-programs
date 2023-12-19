@@ -1,0 +1,24 @@
+;addition
+MOV AH,16H
+MOV BX,16H
+ADD AX,BX
+MOV [1100H],AX
+
+;subtraction
+MOV AX,20H
+MOV BX,10H
+SUB AX,BX
+MOV [1102H],AX
+
+;multiplication
+MOV AX,12H
+MOV BX,11H
+MUL BX
+MOV [1104H],AX
+
+;division
+MOV AX,500H
+MOV BX,100H
+DIV BX
+MOV [1106H],AX
+HLT

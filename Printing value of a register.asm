@@ -1,0 +1,7 @@
+INCLUDE EMU8086.INC 
+ORG 100H 
+MOV AX,150 
+DEFINE_PRINT_NUM 
+DEFINE_PRINT_NUM_UNS 
+CALL PRINT_NUM ;only prints value stored in Ax register
+RET 

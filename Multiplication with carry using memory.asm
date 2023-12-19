@@ -1,0 +1,13 @@
+;multiplication with carry
+MOV CX,0000
+MOV [75H],120H
+MOV [85H],150H
+MOV AX,[75H]
+MOV BX,[85H]
+MUL BX
+JNC GOTO
+INC CX
+GOTO:
+MOV [1200H],AX
+MOV [1210H],CX    
+HLT

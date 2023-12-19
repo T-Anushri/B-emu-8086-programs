@@ -1,0 +1,9 @@
+;division
+MOV [95H],150H
+MOV [105H],20H
+MOV AX,[95H]
+MOV BX,[105H]
+DIV BX
+MOV [1300H],AX  
+MOV [1310H],DX ;remainder
+HLT
